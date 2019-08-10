@@ -1,0 +1,42 @@
+{
+    "imageURL": "/img/ducky.png",
+
+
+    "frames": [
+        {
+            "name": "ducky-1",
+            "rect": [0, 0, 16, 16]
+        },
+        {
+            "name": "ducky-2",
+            "rect": [1, 0, 16, 16]
+        },
+        {
+            "name": "ducky-3",
+            "rect": [2, 0, 16, 16]
+        },
+        {
+            "name": "ducky-4",
+            "rect": [1, 1, 16, 16]
+        },
+        {
+            "name": "ducky-5",
+            "rect": [0, 1, 16, 16]
+        }
+
+    ],
+
+    "animations": [
+        {
+            "name": "quack",
+            "frameLen": 0.15,
+            "frames": [
+                "ducky-1",
+                "ducky-2",
+                "ducky-3",
+                "ducky-4",
+                "ducky-5"
+            ]
+        }
+    ]
+}

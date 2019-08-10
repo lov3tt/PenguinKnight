@@ -6,7 +6,7 @@
     "tiles": [
         {
             "name": "ground",
-            "index": [0, 0]
+            "index": [6, 8]
         },
         {
             "name": "sky",
@@ -14,45 +14,45 @@
         },
         {
             "name": "chocolate",
-            "index": [0, 1]
+            "index": [1, 7]
         },
         {
             "name": "bricks",
-            "index": [1, 0]
+            "index": [3, 6]
         },
         {
             "name": "chance",
-            "index": [24, 0]
+            "index": [33, 0]
         },
 
         {
             "name": "chance-1",
-            "index": [24, 0]
+            "index": [33, 1]
         },
         {
             "name": "chance-2",
-            "index": [25, 0]
+            "index": [33, 0]
         },
         {
             "name": "chance-3",
-            "index": [26, 0]
+            "index": [33, 1]
         },
 
         {
             "name": "pipe-insert-vert-left",
-            "index": [0, 8]
+            "index": [5, 8]
         },
         {
             "name": "pipe-insert-vert-right",
-            "index": [1, 8]
+            "index": [7, 8]
         },
         {
             "name": "pipe-vert-left",
-            "index": [0, 9]
+            "index": [5, 8]
         },
         {
             "name": "pipe-vert-right",
-            "index": [1, 9]
+            "index": [7, 8]
         },
         {
             "name": "cloud-1-1",
@@ -83,7 +83,7 @@
     "animations": [
         {
             "name": "chance",
-            "frameLen": 0.12,
+            "frameLen": 0.22,
             "frames": [
                 "chance-1",
                 "chance-1",

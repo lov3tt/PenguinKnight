@@ -8,6 +8,8 @@ export default class PlayerController extends Trait {
         this.player = null;
         this.score = 0;
         this.time = 300;
+        this.coins = 0;
+        this.life = 3;
     }
 
     setPlayer(entity) {
@@ -15,7 +17,13 @@ export default class PlayerController extends Trait {
 
         this.player.stomper.onStomp = () => {
             this.score += 100;
+            this.coins += 1;
         }
+
+        // this.player.collide.onCollide = () => {
+        //     this.score += 100;
+        //     this.coins += 1;
+        // }
     }
 
     update(entity, deltaTime, level) {

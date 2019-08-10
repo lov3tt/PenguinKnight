@@ -18,7 +18,7 @@ class Font {
 
 
 export function loadFont() {
-    return loadImage('./img/font.png')
+    return loadImage('./img/fonts.png')
     .then(image => {
         const fontSprite = new SpriteSheet(image);
 

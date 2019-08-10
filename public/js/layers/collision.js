@@ -46,7 +46,7 @@ export function createCollisionLayer(level) {
     const drawBoundingBoxes = createEntityLayer(level.entities);
 
     return function drawCollision(context, camera) {
-        drawTileCandidates(context, camera);
-        drawBoundingBoxes(context, camera);
+        // drawTileCandidates(context, camera);
+        // drawBoundingBoxes(context, camera);
     };
 }
