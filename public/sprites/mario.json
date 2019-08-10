@@ -1,0 +1,42 @@
+{
+    "imageURL": "/img/penguinRe.png",
+
+    "frames": [
+        {
+            "name": "idle",
+            "rect": [83, 0, 16, 16]
+        },
+        {
+            "name": "run-1",
+            "rect": [52, 0, 16, 16]
+        },
+        {
+            "name": "run-2",
+            "rect": [67, 0, 16, 16]
+        },
+        {
+            "name": "run-3",
+            "rect": [99, 0, 16, 16]
+        },
+        {
+            "name": "break",
+            "rect": [17, 0, 16, 16]
+        },
+        {
+            "name": "jump",
+            "rect": [0, 0, 16, 16]
+        }
+    ],
+
+    "animations": [
+        {
+            "name": "run",
+            "frameLen": 6,
+            "frames": [
+                "run-1",
+                "run-2",
+                "run-3"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "imageURL": "/img/purple.png",
+
+    "frames": [
+        {
+            "name": "walk-1",
+            "rect": [55, 0, 17, 19]
+        },
+        {
+            "name": "walk-2",
+            "rect": [38, 0, 17, 19]
+        },
+        {
+            "name": "flat",
+            "rect": [20, 0, 17, 19]
+        }
+    ],
+
+    "animations": [
+        {
+            "name": "walk",
+            "frameLen": 0.15,
+            "frames": [
+                "walk-1",
+                "walk-2"
+            ]
+        }
+    ]
+}
