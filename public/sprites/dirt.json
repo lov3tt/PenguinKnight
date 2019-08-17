@@ -5,8 +5,8 @@
 
     "tiles": [
         {
-            "name": "ground",
-            "index": [0, 2]
+            "name": "dirt",
+            "index": [0, 3]
         }
         
     ]

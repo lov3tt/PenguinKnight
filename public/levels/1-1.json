@@ -30,6 +30,30 @@
                 }
             ]
         },
+        "waterBlock": {
+            "tiles": [
+                {
+                    "name": "waterBlock",
+                    "type": "ground",
+                    "ranges": [
+                        [0, 0]
+                    ]
+                }
+
+            ]
+        },
+        "dirt": {
+            "tiles": [
+                {
+                    "name": "dirt",
+                    "type": "ground",
+                    "ranges": [
+                        [0, 0]
+                    ]
+                }
+
+            ]
+        },
 
         "pipe-section-vert": {
             "tiles": [
@@ -152,6 +176,9 @@
                         ]
                     ]
                 },
+        
+                
+
                 {
                     "name": "sky",
                     "ranges": [
@@ -208,12 +235,27 @@
                 }
             ]
         },
+        
         {
             "tiles": [
+                {"name": "waterBlock",
+                    "type": "ground",
+                    "ranges": [
+                        [75,2,14,1],
+                        [92,2,14,1],
+                        [157,2,14,1]
+                    ]
+
+                },
+
+
                 {
                     "name": "bricks",
                     "type": "ground",
                     "ranges": [
+                        [0, 1, 0, 13],
+                        [212,1,0,15],
+                        
                         [
                             27, 5,
                             9
@@ -337,6 +379,36 @@
 
     "entities": [
         {
+            "name": "water",
+            "pos": [1200, 210]
+
+        },
+        {
+            "name": "water",
+            "pos": [1215, 210]
+
+        },
+        {
+            "name": "water",
+            "pos": [1472, 210]
+
+        },
+        {
+            "name": "water",
+            "pos": [1487, 210]
+
+        },
+        {
+            "name": "water",
+            "pos": [2512, 210]
+
+        },
+        {
+            "name": "water",
+            "pos": [2528, 210]
+
+        },
+        {
             "name": "koopa",
             "pos": [260, 0]
         },
@@ -431,6 +503,43 @@
         {
             "name": "ducky",
             "pos": [2280, 100]
+        },
+        {
+            "name": "ducky",
+            "pos": [2380, 100]
+        },
+        {
+            "name": "ducky",
+            "pos": [2480, 100]
+        },
+        {
+            "name": "ducky",
+            "pos": [2580, 100]
+        },
+        {
+            "name": "ducky",
+            "pos": [2680, 100]
+        },
+        {
+            "name": "ducky",
+            "pos": [2780, 100]
+        },
+        {
+            "name": "ducky",
+            "pos": [2880, 100]
+        },
+        {
+            "name": "ducky",
+            "pos": [2980, 100]
+        },
+
+        {
+            "name": "ducky",
+            "pos": [3180, 100]
+        },
+        {
+            "name": "ducky",
+            "pos": [3280, 100]
         }
     ]
 }

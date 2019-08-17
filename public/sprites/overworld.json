@@ -4,9 +4,14 @@
     "tileH": 16,
 
     "tiles": [
+
         {
             "name": "ground",
             "index": [6, 8]
+        },
+        {
+            "name": "waterBlock",
+            "index": [3, 21]
         },
         {
             "name": "sky",

@@ -1,0 +1,28 @@
+{
+    "imageURL": "/img/water.png",
+
+
+    "frames": [
+        {
+            "name": "water-1",
+            "rect": [0, 0, 16, 16]
+        },
+        {
+            "name": "water-2",
+            "rect": [0, 1, 16, 16]
+        }
+
+    ],
+
+    "animations": [
+        {
+            "name": "splash",
+            "frameLen": 0.15,
+            "frames": [
+                "water-1",
+                "water-2"
+
+            ]
+        }
+    ]
+}

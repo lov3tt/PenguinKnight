@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <title>Penguin Knight</title>
     <style>
         body {
@@ -8,16 +10,88 @@
             margin: 0;
         }
 
+
+
         #screen {
             display: block;
             image-rendering: pixelated;
-            height: 100vh;
+            width: 75vw;
+            height: 75vh;
+
             margin: auto;
+            text-align: left;
+            position: absolute;
+            top: calc(50vh - (
+                        /* height */
+                        75vh / 2));
+            left: calc(50vw - (
+                        /* width */
+                        75vw / 2));
+                       
+        }
+
+        #title {
+            background-image: url("img/title.jpg");
+            text-align: left;
+            position: absolute;
+            width: 75vw;
+            height: 75vh;
+            top: calc(50vh - (
+                        /* height */
+                        75vh / 2));
+            left: calc(50vw - (
+                        /* width */
+                        75vw / 2));
+            z-index: -1;
+            background-repeat: no-repeat;
+            
+        }
+
+        #bg {
+            z-index: -3;
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            top: calc(50vh - (
+                        /* height */
+                        100vh / 2));
+            left: calc(50vw - (
+                        /* width */
+                        100vw / 2));
+            z-index: -2;
+            background-repeat: no-repeat;
+            
         }
     </style>
     <script type="module" src="/js/main.js"></script>
 </head>
+
 <body>
+
+        <nav>
+                <div class="nav-wrapper grey darken-3">
+                  <a href="#!" class="brand-logo">Penguin Knight</a>
+                  <ul class="right hide-on-med-and-down">
+                    <li><a class="waves-effect waves-light btn orange accent-4">Sign-In</a></li>
+
+                    <li><a class="waves-effect waves-light btn-large orange accent-4">Hi-Score</a></li>
+                  </ul>
+                </div>
+              </nav>
+
+                  </ul>
+                </div>
+              </nav>
+
+
+
     <canvas id="screen" width="256" height="240"></canvas>
+    <canvas id="title" width="1200" height="700">  </canvas>
+    <canvas id="bg" width="1200" height="1000"></canvas>
+  
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
+
 </html>
