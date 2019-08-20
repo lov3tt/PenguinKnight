@@ -8,15 +8,15 @@ module.exports = function(sequelize, Sequelize) {
             type: Sequelize.INTEGER
         },
  
-        firstname: {
-            type: Sequelize.STRING,
-            notEmpty: true
-        },
+        // firstname: {
+        //     type: Sequelize.STRING,
+        //     notEmpty: true
+        // },
  
-        lastname: {
-            type: Sequelize.STRING,
-            notEmpty: true
-        },
+        // lastname: {
+        //     type: Sequelize.STRING,
+        //     notEmpty: true
+        // },
  
         username: {
             type: Sequelize.TEXT
@@ -26,12 +26,12 @@ module.exports = function(sequelize, Sequelize) {
             type: Sequelize.TEXT
         },
  
-        email: {
-            type: Sequelize.STRING,
-            validate: {
-                isEmail: true
-            }
-        },
+        // email: {
+        //     type: Sequelize.STRING,
+        //     validate: {
+        //         isEmail: true
+        //     }
+        // },
  
         password: {
             type: Sequelize.STRING,
