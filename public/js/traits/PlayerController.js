@@ -36,8 +36,16 @@ export default class PlayerController extends Trait {
         } 
        
         if (this.life < 0 || this.time < 0) {
-            alert("Game Over")
+            alert("GAME OVER");
+            // this.score = 0;
+            // this.time = 300;
+            // this.coins = 0;
+            // this.life = 4;
+            document.location.reload();
+            // clearInterval(interval); 
         }
+
+
 
         else {
             this.time -= deltaTime * 2;
@@ -47,4 +55,5 @@ export default class PlayerController extends Trait {
         // }
 
     }
+
 }

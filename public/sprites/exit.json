@@ -1,0 +1,28 @@
+{
+    "imageURL": "/img/tiles.png",
+
+
+    "frames": [
+        {
+            "name": "exit-1",
+            "rect": [128, 16, 16, 16]
+        },
+        {
+            "name": "exit-2",
+            "rect": [128, 16, 16, 16]
+        }
+
+    ],
+
+    "animations": [
+        {
+            "name": "exit",
+            "frameLen": 0.15,
+            "frames": [
+                "exit-1",
+                "exit-2"
+
+            ]
+        }
+    ]
+}

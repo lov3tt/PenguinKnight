@@ -194,3 +194,4 @@ async function main(canvas) {
 const canvas = document.getElementById('screen');
 
 titleScreen()
+

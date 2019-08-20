@@ -17,39 +17,24 @@ class Behavior extends Trait {
     }
 
     collides(us, them) {
-        maybe();
         // if (us.killable.dead) {
         //     return;
         // }
 
-        // if (them.stomper) {
-        //     if (them.vel.y > us.vel.y) {
-        //         them.killable.kill();
-        //         us.pendulumMove.speed = 0;
-        //     } else  {
-        //         them.killable.kill();
-        //     }
-        // }
+        if (them.stomper) {
+            if (them.vel.y > us.vel.y) {
+                them.killable.kill();
+                us.pendulumMove.speed = 0;
+            } else  {
+                them.killable.kill();
+            }
+        }
     }
 }
 
 
-
-function gameWon(){
-    // instance.open();
-    // $('myModal').modal('show')
-    document.location.reload();
-    // clearInterval(interval); 
-}
-
-$(".modal").on("show.bs.modal", function maybe(e) {
-    gameWon()
-})
-
-
-
 function createExitFactory(sprite) {
-    const walkAnim = sprite.animations.get('exit');
+    const walkAnim = sprite.animations.get('splash');
 
     function routeAnim(exit) {
         if (exit.killable.dead) {

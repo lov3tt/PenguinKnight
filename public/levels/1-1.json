@@ -379,6 +379,16 @@
 
     "entities": [
         {
+            "name": "exit",
+            "pos": [150, 200]
+
+        },
+        {
+            "name": "exit",
+            "pos": [150, 184]
+
+        },
+        {
             "name": "water",
             "pos": [1200, 210]
 

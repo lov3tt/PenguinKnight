@@ -3,6 +3,7 @@ import {loadGoomba} from './entities/Goomba.js';
 import {loadKoopa} from './entities/Koopa.js';
 import {loadDucky} from './entities/Ducky.js';
 import {loadWater} from './entities/Water.js';
+import {loadExit} from './entities/Exit.js';
 
 
 export function loadEntities() {
@@ -19,6 +20,7 @@ export function loadEntities() {
         loadKoopa().then(addAs('koopa')),
         loadDucky().then(addAs('ducky')),
         loadWater().then(addAs('water')),
+        loadExit().then(addAs('exit')),
     ])
     .then(() => entityFactories);
 }

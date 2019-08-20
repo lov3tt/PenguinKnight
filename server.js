@@ -45,6 +45,7 @@ var models = require("./app/models");
 //Routes
  
 var authRoute = require('./app/routes/auth.js')(app,passport);
+var hiScore = require("./routes/newScore")(app);
  
  
 //load passport strategies
