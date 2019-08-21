@@ -77,7 +77,7 @@ var models = require("./app/models");
 //Routes
  
 var authRoute = require('./app/routes/auth.js')(app,passport);
-var hiScore = require("./routes/newScore")(app);
+var hiScore = require("./app/routes/newScore")(app);
  
  
 //load passport strategies
@@ -103,7 +103,8 @@ app.listen(PORT, function(err) {
  
     if (!err)
  
-        console.log("Site is live");
+        console.log("Running at http://localhost:5000");
+
          
     else console.log(err)
  

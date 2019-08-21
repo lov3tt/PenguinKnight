@@ -7,16 +7,7 @@ module.exports = function(sequelize, Sequelize) {
             primaryKey: true,
             type: Sequelize.INTEGER
         },
- 
-        // firstname: {
-        //     type: Sequelize.STRING,
-        //     notEmpty: true
-        // },
- 
-        // lastname: {
-        //     type: Sequelize.STRING,
-        //     notEmpty: true
-        // },
+
  
         username: {
             type: Sequelize.TEXT
@@ -26,12 +17,6 @@ module.exports = function(sequelize, Sequelize) {
             type: Sequelize.TEXT
         },
  
-        // email: {
-        //     type: Sequelize.STRING,
-        //     validate: {
-        //         isEmail: true
-        //     }
-        // },
  
         password: {
             type: Sequelize.STRING,
@@ -40,6 +25,10 @@ module.exports = function(sequelize, Sequelize) {
  
         last_login: {
             type: Sequelize.DATE
+        },
+
+        hiScore: {
+            type: Sequelize.TEXT
         },
  
         status: {

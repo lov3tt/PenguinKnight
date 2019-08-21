@@ -1,4 +1,4 @@
-var db = require("../app/models")
+var db = require("../models")
 
 module.exports = function(app){
     app.get("/api/hiScore", function(req,res) {
