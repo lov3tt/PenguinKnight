@@ -67,7 +67,7 @@ app.set('view engine', '.hbs');
  
 // app.get('/', function(req, res) {
  
-//     res.send('./app/public/index.html');
+//     res.send('welcome');
  
 // });
  
