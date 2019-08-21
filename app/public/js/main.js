@@ -124,20 +124,8 @@ function draw() {
     x += dx;
 }
 
-
-//Add press enter in title screen
-// var bg = document.getElementById("title");
-// var tText = bg.getContext("2d");
-// tText.font = "30px Arial";
-// tText.fillText("Hello World", 10, 50);
-
-
 //make Title screen
 function titleScreen() {
-
-
-
-
 
     window.addEventListener("keydown", event => {
         if (event.key == "Enter") {

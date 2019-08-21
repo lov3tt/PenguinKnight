@@ -30,8 +30,14 @@
  
     "production": {
         
-        "use_env_variable": "JAWSDB_URL",
-        
+        "username": "wweu1sass36t8xpx",
+ 
+        "password": "ddiqxv91czs9sdt9",
+ 
+        "database": "zewnf78ez36qwdmw",
+ 
+        "host": "127.0.0.1",
+ 
         "dialect": "mysql"
  
     }

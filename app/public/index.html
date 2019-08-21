@@ -87,7 +87,9 @@
         Sign-Up
       </button>
 
-        <button type="button" class="btn btn-warning btn-lg">Hi-Score</button>
+      <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#Hiscore">
+        Hi-Score
+      </button>
 
     </form>
   </nav>
@@ -156,7 +158,25 @@
         </div>
       </div>
 
-
+<!-- Modal -->
+<div class="modal fade" id="Hiscore" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Hi-Score</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      Username: 000
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 

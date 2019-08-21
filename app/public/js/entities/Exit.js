@@ -1,9 +1,10 @@
 import Entity, {Sides, Trait} from '../Entity.js';
 import Killable from '../traits/Killable.js';
-import PendulumMove from '../traits/PendulumMove.js';
+// import PendulumMove from '../traits/PendulumMove.js';
 // import Physics from '../traits/Physics.js';
-import Solid from '../traits/Solid.js';
+// import Solid from '../traits/Solid.js';
 import {loadSpriteSheet} from '../loaders.js';
+import PlayerController from '../traits/PlayerController.js';
 
 export function loadExit() {
     return loadSpriteSheet('exit')
@@ -16,33 +17,26 @@ class Behavior extends Trait {
         super('behavior');
     }
 
-    collides(us, them) {
+    collides() {
         gameWon();
-        // if (us.killable.dead) {
-        //     return;
-        // }
-
-        // if (them.stomper) {
-        //     if (them.vel.y > us.vel.y) {
-        //         them.killable.kill();
-        //         us.pendulumMove.speed = 0;
-        //     } else  {
-        //         them.killable.kill();
-        //     }
-        // }
     }
 }
 
 
 
-function gameWon(){
-    // instance.open();
+function gameWon(hiScore){
+    // let playerScore = new PlayerController();
+    // this.player= entity;
+    // playerScore.setPlayer(hiScore);
+    // console.log("Player Score" + player.score
+    //  +"Player life:" + playerScore.life)
     alert("Game Won")
-    // $('myModal').modal('show')
-    document.location.reload();
-    clearInterval(interval); 
+    document.location.reload(); 
 }
 
+function submitScore() {
+
+}
 
 
 
@@ -66,11 +60,11 @@ function createExitFactory(sprite) {
         const exit = new Entity();
         exit.size.set(16, 16);
 
-        // ducky.addTrait(new Physics());
-        exit.addTrait(new Solid());
-        exit.addTrait(new PendulumMove());
+        // exit.addTrait(new Solid());
+        // exit.addTrait(new PendulumMove());
         exit.addTrait(new Behavior());
         exit.addTrait(new Killable());
+ 
 
         exit.draw = drawExit;
 
