@@ -10,22 +10,15 @@ module.exports = function(sequelize, Sequelize) {
 
  
         username: {
-            type: Sequelize.TEXT
+            type: Sequelize.TEXT,
+            allowNull: false
         },
- 
-        about: {
-            type: Sequelize.TEXT
-        },
- 
- 
+
         password: {
             type: Sequelize.STRING,
             allowNull: false
         },
- 
-        last_login: {
-            type: Sequelize.DATE
-        },
+
 
         hiScore: {
             type: Sequelize.TEXT
