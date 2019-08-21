@@ -6,8 +6,6 @@
   "scripts": {
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
- 
-   
   },
   "author": "",
   "license": "ISC",
@@ -19,11 +17,11 @@
     "express-handlebars": "^3.1.0",
     "express-session": "^1.16.2",
     "materialize-css": "^1.0.0-rc.2",
+    "mysql": "^2.17.1",
     "mysql2": "^1.6.5",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "sequelize": "^5.15.1",
-    "serve": "^6.5.8",
     "serve-handler": "^6.1.1"
   }
 }
