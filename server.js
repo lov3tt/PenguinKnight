@@ -98,8 +98,8 @@ models.sequelize.sync().then(function() {
  
 });
  
- 
-app.listen(5000, function(err) {
+var PORT = process.env.PORT || 5000
+app.listen(PORT, function(err) {
  
     if (!err)
  
