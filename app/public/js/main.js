@@ -167,23 +167,23 @@ async function main(canvas) {
 
     const camera = new Camera();
 
-    const mario = entityFactory.mario();
+    const penguin = entityFactory.penguin();
 
-    const playerEnv = createPlayerEnv(mario);
+    const playerEnv = createPlayerEnv(penguin);
     level.entities.add(playerEnv);
 
 
     level.comp.layers.push(createCollisionLayer(level));
     level.comp.layers.push(createDashboardLayer(font, playerEnv));
 
-    const input = setupKeyboard(mario);
+    const input = setupKeyboard(penguin);
     input.listenTo(window);
 
     const timer = new Timer(1 / 60);
     timer.update = function update(deltaTime) {
         level.update(deltaTime);
 
-        camera.pos.x = Math.max(0, mario.pos.x - 100);
+        camera.pos.x = Math.max(0, penguin.pos.x - 100);
 
         level.comp.draw(context, camera);
     }
@@ -195,3 +195,8 @@ const canvas = document.getElementById('screen');
 
 titleScreen()
 
+// $("#signIn").click(function(){
+//     $.ajax({url:"http://localhost:5000/signin", success: function(result){
+//       $("#signIn").html(result);
+//     }});
+//   });

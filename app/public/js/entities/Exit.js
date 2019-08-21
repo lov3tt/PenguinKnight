@@ -17,7 +17,7 @@ class Behavior extends Trait {
     }
 
     collides(us, them) {
-        maybe();
+        gameWon();
         // if (us.killable.dead) {
         //     return;
         // }
@@ -37,14 +37,13 @@ class Behavior extends Trait {
 
 function gameWon(){
     // instance.open();
+    alert("Game Won")
     // $('myModal').modal('show')
     document.location.reload();
-    // clearInterval(interval); 
+    clearInterval(interval); 
 }
 
-$(".modal").on("show.bs.modal", function maybe(e) {
-    gameWon()
-})
+
 
 
 

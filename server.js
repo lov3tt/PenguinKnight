@@ -5,6 +5,21 @@ var session = require('express-session')
 var bodyParser = require('body-parser')
 var env = require('dotenv')
 var exphbs = require('express-handlebars')
+const handler = require('serve-handler');
+const http = require('http');
+
+// const server = http.createServer((request, response) => {
+    
+//     // You pass two more arguments for config and middleware
+//     // More details here: https://github.com/zeit/serve-handler#options
+//     return handler(request, response);
+//   })
+
+//cors
+// app.use(function(req, res, next) {
+//     res.header('Access-Control-Allow-Origin', '*');
+//     next();
+// })
  
  
 //For BodyParser
@@ -23,7 +38,24 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session()); // persistent login sessions
  
- 
+//middleware
+app.use(express.static('app/public'))
+
+
+
+// if (process.env.NODE_ENV === 'production') {
+//     // Serve up static assets (usually on heroku)
+//     app.use(express.static('client/build'))
+//     // Handle React routing, return all requests to React app
+//     app.get('*', (req, res) => {
+//       res.sendFile(path.join(__dirname, 'client/build', 'index.html'))
+//     })
+//    } else {
+//     // Serve up static assets
+//     app.use(express.static('client/public'))
+//    }
+   
+
 //For Handlebars
 app.set('views', './app/views')
 app.engine('hbs', exphbs({
@@ -76,3 +108,7 @@ app.listen(5000, function(err) {
     else console.log(err)
  
 });
+
+// server.listen(3000, () => {
+//     console.log('Running at http://localhost:3000');
+//   });

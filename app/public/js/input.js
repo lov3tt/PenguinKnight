@@ -1,26 +1,26 @@
 import Keyboard from './KeyboardState.js';
 
-export function setupKeyboard(mario) {
+export function setupKeyboard(penguin) {
     const input = new Keyboard();
 
     input.addMapping('Space', keyState => {
         if (keyState) {
-            mario.jump.start();
+            penguin.jump.start();
         } else {
-            mario.jump.cancel();
+            penguin.jump.cancel();
         }
     });
 
     input.addMapping('ShiftLeft', keyState => {
-        mario.turbo(keyState);
+        penguin.turbo(keyState);
     });
 
     input.addMapping('ArrowRight', keyState => {
-        mario.go.dir += keyState ? 1 : -1;
+        penguin.go.dir += keyState ? 1 : -1;
     });
 
     input.addMapping('ArrowLeft', keyState => {
-        mario.go.dir += keyState ? -1 : 1;
+        penguin.go.dir += keyState ? -1 : 1;
     });
 
 

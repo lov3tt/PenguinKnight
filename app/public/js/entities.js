@@ -1,4 +1,4 @@
-import {loadMario} from './entities/Mario.js';
+import {loadPenguin} from './entities/Penguin.js';
 import {loadGoomba} from './entities/Goomba.js';
 import {loadKoopa} from './entities/Koopa.js';
 import {loadDucky} from './entities/Ducky.js';
@@ -15,7 +15,7 @@ export function loadEntities() {
 
 
     return Promise.all([
-        loadMario().then(addAs('mario')),
+        loadPenguin().then(addAs('penguin')),
         loadGoomba().then(addAs('goomba')),
         loadKoopa().then(addAs('koopa')),
         loadDucky().then(addAs('ducky')),
