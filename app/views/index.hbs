@@ -2,73 +2,83 @@
 <html>
 
 <head>
-      <!-- Added link to the jQuery Library -->
+<link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Penguin Knight</title>
-    <style>
-        body {
-            background: #000;
-            margin: 0;
-        }
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Penguin Knight</title>
+  <style>
+
+    
+    body {
+      background: #000;
+      margin: 0;
+      font-family: 'EB Garamond', serif;
+    }
 
 
 
-        #screen {
-            display: block;
-            image-rendering: pixelated;
-            width: 75vw;
-            height: 75vh;
+    #screen {
+      display: block;
+      image-rendering: pixelated;
+      width: 75vw;
+      height: 75vh;
 
-            margin: auto;
-            text-align: left;
-            position: absolute;
-            top: calc(50vh - (
-                        /* height */
-                        75vh / 2));
-            left: calc(50vw - (
-                        /* width */
-                        75vw / 2));
-                       
-        }
+      margin: auto;
+      text-align: left;
+      position: absolute;
+      top: calc(50vh - (
+            /* height */
+            75vh / 2));
+      left: calc(50vw - (
+            /* width */
+            75vw / 2));
 
-        #title {
-            background-image: url("/img/gameTitle.jpg");
-            text-align: left;
-            position: absolute;
-            width: 75vw;
-            height: 75vh;
-            top: calc(50vh - (
-                        /* height */
-                        75vh / 2));
-            left: calc(50vw - (
-                        /* width */
-                        75vw / 2));
-            z-index: -1;
-            background-repeat: no-repeat;
-            
-        }
+    }
 
-        #bg {
-            z-index: -3;
-            position: absolute;
-            width: 100vw;
-            height: 100vh;
-            top: calc(50vh - (
-                        /* height */
-                        100vh / 2));
-            left: calc(50vw - (
-                        /* width */
-                        100vw / 2));
-            z-index: -2;
-            background-repeat: no-repeat;
-            
-        }
+    #title {
+      background-image: url("/img/pengif.gif");
+      text-align: left;
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      top: calc(50vh - (
+            /* height */
+            50vh / 2));
+      left: calc(50vw - (
+            /* width */
+            50vw / 2));
+      z-index: -1;
+      background-repeat: no-repeat;
 
-        button {
-          padding: 0px 20px 0px 20px;
-        }
-    </style>
+    }
+
+    #bg {
+      z-index: -3;
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      top: calc(50vh - (
+            /* height */
+            100vh / 2));
+      left: calc(50vw - (
+            /* width */
+            100vw / 2));
+      z-index: -2;
+      background-repeat: no-repeat;
+
+    }
+
+    button {
+      padding: 0px 20px 0px 20px;
+    }
+
+    #guide {
+
+      bottom: 0;
+
+    }
+  </style>
 
 </head>
 
@@ -78,26 +88,20 @@
     <a class="navbar-brand text-white">Penguin Knight</a>
     <form class="form-inline text-white">
 
-  <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signIn">
-      Sign-In
-    </button>
-
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signUp">
-        Sign-Up
-      </button>
-
-      <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#Hiscore">
-        Hi-Score
-      </button>
-
+      <!-- Button trigger modal -->
+      <div class="mx-md-n3">
+      <button type="button" class="px-md-3 btn btn-primary" data-toggle="modal" data-target="#signIn">Sign-In </button>
+      <button type="button" class="px-md-3 btn btn-primary" data-toggle="modal" data-target="#signUp"> Sign-Up </button>
+      <button type="button" class="px-md-3 btn btn-warning btn-lg" data-toggle="modal" data-target="#Hiscore"> Hi-Score</button>
+</div>
     </form>
   </nav>
 
 
-  
+
   <!-- Modal -->
-  <div class="modal fade" id="signIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="signIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -107,17 +111,18 @@
           </button>
         </div>
         <div class="modal-body">
-            <form id="signin" name="signin" method="post" action="signin">
-                <div class="form-group">
-                  <label for="username">UserName:</label>
-                  <input name="username" type="text" class="form-control" placeholder="Username">
-                </div>
-                <div class="form-group">
-                  <label for="password">Password:</label>
-                  <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div>
-                <button type="submit" value="Sign In" class="btn btn-primary">Submit</button>
-              </form>
+          <form id="signin" name="signin" method="post" action="signin">
+            <div class="form-group">
+              <label for="username">UserName:</label>
+              <input name="username" type="text" class="form-control" placeholder="Username">
+            </div>
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input name="password" type="password" class="form-control" id="exampleInputPassword1"
+                placeholder="Password">
+            </div>
+            <button type="submit" value="Sign In" class="btn btn-primary">Submit</button>
+          </form>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -127,68 +132,85 @@
     </div>
   </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="signUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Create Account</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-                <form id="signup" name="signup" method="post" action="signup">
-                    <div class="form-group">
-                      <label for="username">UserName:</label>
-                      <input name="username" type="text" class="form-control" placeholder="Username">
-                    </div>
-                    <div class="form-group">
-                      <label for="password">Password:</label>
-                      <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    </div>
-                    <button type="submit" value="Sign In" class="btn btn-primary">Submit</button>
-                  </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-    
-            </div>
-          </div>
+  <!-- Modal -->
+  <div class="modal fade" id="signUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Create Account</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-      </div>
+        <div class="modal-body">
+          <form id="signup" name="signup" method="post" action="signup">
+            <div class="form-group">
+              <label for="username">UserName:</label>
+              <input name="username" type="text" class="form-control" placeholder="Username">
+            </div>
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input name="password" type="password" class="form-control" id="exampleInputPassword1"
+                placeholder="Password">
+            </div>
+            <button type="submit" value="Sign In" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-<!-- Modal -->
-<div class="modal fade" id="Hiscore" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Hi-Score</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      Username: 000
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="Hiscore" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Hi-Score</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Username: 000
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <h1 class="text-center">Penguin Knight</h1>
+  <hr>
+
+  <div class="text-center fixed-bottom shadow-lg p-3 mb-5 bg-green rounded" id="guide">
+    <h1>How to Play:</h1>
+    <h1>Hold L-Shift to run || Move with Arrow keys || Press Space to jump</h1>
+    <h1>Objective: Collect Rubber Ducky and reach the exit</h1>
+  </div>
 
 
 
-    <canvas id="screen" width="256" height="240"></canvas>
-    <canvas id="title" width="1200" height="700">  </canvas>
-    <canvas id="bg" width="1200" height="1000"></canvas>
-  
 
- <script type="module" src="/js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <canvas id="screen" width="256" height="240"></canvas>
+  <canvas id="title" width="1200" height="700"> </canvas>
+  <canvas id="bg" width="1200" height="1000"></canvas>
+
+
+  <script type="module" src="/js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
