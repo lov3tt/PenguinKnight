@@ -30,8 +30,12 @@ function gameWon(hiScore){
     // playerScore.setPlayer(hiScore);
     // console.log("Player Score" + player.score
     //  +"Player life:" + playerScore.life)
-    alert("Game Won")
-    document.location.reload(); 
+    if (confirm("You Win!")) {
+        document.location.reload();
+      } else {
+        document.location.reload();
+      }
+
 }
 
 function submitScore() {

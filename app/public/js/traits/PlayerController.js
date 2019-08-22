@@ -23,6 +23,8 @@ export default class PlayerController extends Trait {
         
     }
 
+
+
     update(entity, deltaTime, level) {
         if (!level.entities.has(this.player)) {
             this.player.killable.revive();
@@ -32,8 +34,14 @@ export default class PlayerController extends Trait {
         } 
        
         if (this.life < 0 || this.time < 0) {
-            alert("GAME OVER");
-            document.location.reload();
+            if (confirm("Game Over!")) {
+                document.location.reload();
+              } else {
+                document.location.reload();
+              }
+
+
+            
         }
 
 

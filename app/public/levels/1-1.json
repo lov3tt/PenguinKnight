@@ -200,6 +200,8 @@
                     "name": "ground",
                     "type": "ground",
                     "ranges": [
+
+                      
                         [
                             5, 3,
                             9, 1
@@ -254,7 +256,9 @@
                     "type": "ground",
                     "ranges": [
                         [0, 1, 0, 13],
-                        [212,1,0,15],
+
+
+
                         
                         [
                             27, 5,
@@ -305,6 +309,8 @@
                     "name": "chocolate",
                     "type": "ground",
                     "ranges": [
+
+                        [212,10,0,15],
                         [141, 1, 9],
                         [140, 2, 10],
                         [139, 3, 11],
@@ -425,6 +431,46 @@
         {
             "name": "goomba",
             "pos": [220, 0]
+        },
+        {
+            "name": "goomba",
+            "pos": [420, 0]
+        },
+        {
+            "name": "goomba",
+            "pos": [620, 0]
+        },
+        {
+            "name": "goomba",
+            "pos": [820, 0]
+        },
+        {
+            "name": "goomba",
+            "pos": [1020, 0]
+        },
+        {
+            "name": "goomba",
+            "pos": [1220, 0]
+        },
+        {
+            "name": "goomba",
+            "pos": [1420, 0]
+        },
+        {
+            "name": "goomba",
+            "pos": [1620, 0]
+        },
+        {
+            "name": "goomba",
+            "pos": [1820, 0]
+        },
+        {
+            "name": "goomba",
+            "pos": [2020, 0]
+        },
+        {
+            "name": "goomba",
+            "pos": [2220, 0]
         },
         {
             "name": "ducky",
