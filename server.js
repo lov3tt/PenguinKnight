@@ -65,11 +65,10 @@ app.set('view engine', '.hbs');
  
  
  
-// app.get('/', function(req, res) {
- 
-//     res.send('welcome');
- 
-// });
+app.get('/', function (req, res) {
+
+    res.render('index')
+})
  
 //Models
 var models = require("./app/models");
