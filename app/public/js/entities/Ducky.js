@@ -10,13 +10,18 @@ export function loadDucky() {
     .then(createDuckyFactory);
 }
 
+//audio
+var audio = new Audio('../sound/quack.mp3');
 
 class Behavior extends Trait {
     constructor() {
         super('behavior');
     }
 
+
+
     collides(us, them) {
+        audio.play();
         if (us.killable.dead) {
             return;
         }
