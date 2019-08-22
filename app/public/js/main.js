@@ -124,12 +124,17 @@ function draw() {
     x += dx;
 }
 
+//audio
+var audio = new Audio('/sound/land.mp3');
+
+
 //make Title screen
 function titleScreen() {
 
     window.addEventListener("keydown", event => {
         if (event.key == "Enter") {
             main(canvas)
+            audio.play();
 
         }
     }, {
